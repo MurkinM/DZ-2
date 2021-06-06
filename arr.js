@@ -40,4 +40,10 @@ function middleSalary () {
 console.log("Общая Зарплата:", sumOfSalary(it_department_employees),
             "Среднаяя Зарплата:", middleSalary());
 
-            
+// Задание 3
+const bigSalary =  it_department_employees.filter((item) => {
+    return item.salary > 1500
+})
+
+const riseOfSalary = bigSalary.map ((item) => item.salary + 500)
+console.log(riseOfSalary)
